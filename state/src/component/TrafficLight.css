@@ -1,0 +1,25 @@
+.TrafficLight {
+    display: flex;
+    flex-direction: column;
+}
+.TrafficLight .cicrle {
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    opacity: 0.3;
+}
+.TrafficLight .cicrle.active {
+    opacity: 1;
+}
+.TrafficLight .cicrle.red {
+    background-color: red;
+}
+
+.TrafficLight .cicrle.yellow {
+    background-color: yellow;
+}
+
+.TrafficLight .cicrle.green {
+    background-color: green;
+}
