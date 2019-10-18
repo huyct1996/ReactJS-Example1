@@ -2,6 +2,7 @@ import React from 'react';
 import './Welcome.css';
 import checkImg from '../img/check.png';
 import checkDoneImg from '../img/check-done.png';
+import PropTypes from 'prop-types';
 
 class Welcome extends React.Component {
     render() {
@@ -20,5 +21,13 @@ class Welcome extends React.Component {
         )
     }
 }
+
+Welcome.propTypes = {
+    item: PropTypes.shape({
+        name: PropTypes.string,
+        isComplete: PropTypes.bool
+    }),
+    onClick: PropTypes.func
+};
 
 export default Welcome;
